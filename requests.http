@@ -5,10 +5,10 @@ Content-Type: application/json
 {"name": "Sally"}
 
 ### Get user
-GET {{registrationUrl}}/users/USER-ID
+GET {{registrationUrl}}/users/2
 
 ### Get account
-GET {{registrationUrl}}/accounts?ownerId=USER-ID
+GET {{registrationUrl}}/accounts?ownerId=19
 
 ### Create project
 POST {{registrationUrl}}/projects
@@ -17,16 +17,16 @@ Content-Type: application/json
 {"name": "Basket Weaving III", "accountId": ACCOUNT-ID}
 
 ### Get projects
-GET {{registrationUrl}}/projects?accountId=ACCOUNT-ID
+GET {{registrationUrl}}/projects?accountId=19
 
 ### Create allocation
 POST {{allocationsUrl}}/allocations
 Content-Type: application/json
 
-{"projectId": PROJECT-ID, "userId": USER-ID, "firstDay": "2015-05-17", "lastDay": "2015-05-18"}
+{"projectId": 10, "userId": 19, "firstDay": "2015-05-17", "lastDay": "2015-05-18"}
 
 ### Get allocations
-GET {{allocationsUrl}}/allocations?projectId=PROJECT-ID
+GET {{allocationsUrl}}/allocations?projectId=10
 
 ### Create story
 POST {{backlogUrl}}/stories
